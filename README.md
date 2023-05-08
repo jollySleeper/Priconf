@@ -4,13 +4,15 @@ Currently a HardCoded Firefox Browser Web Extension for having a unified
 config for your favourite Privay Frontends.
 
 ## Motivation
-The Piped Instances I used from LibRedirect used to have different settings 
-for different instances. So, I wanted all the instances that I use to have 
-same settings. Over Time I expanded this functionality to different Privay 
-Frontends.
+The [Piped](https://github.com/TeamPiped/Piped) Instances I used from
+[LibRedirect](https://github.com/libredirect/browser_extension) used to have
+different settings for different instances.
+So, I wanted all the instances that I use to have
+same settings. So, here is the basic WebExtension I created over the Weekend.
+Over Time I expanded this functionality to different Privay Frontends.
 
 ## Supported Frontends
-- Piped
+- [Piped](https://github.com/TeamPiped/Piped)
 - SearXNG
 - LibReddit
 - Nitter
@@ -18,10 +20,10 @@ Frontends.
 - Quetre
 
 ## Project RoadMap
-[] Add UI
-[] Take Instances Input from User
-[] Allow User to Configure Settings via UI
-[] Publist this Plugin
+- [] Add UI
+- [] Take Instances Input from User
+- [] Allow User to Configure Settings via UI
+- [] Publist this Plugin
 
 ## How To Use
 If you want to use it you can HardCode your Settings in `priconf.js` and 

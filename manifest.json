@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "PriConf",
+    "version": "0.1",
+    "description": "AutoLoad Piped, SearXNG, etc. Preferences",
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "priconf.js"
+            ]
+        }
+    ],
+            "browser_specific_settings": {
+        "gecko": {
+            "id": "UniConf@jolly.Sleeper",
+            "strict_min_version": "42.0"
+        }
+    }
+}

@@ -25,10 +25,11 @@ Over Time I expanded this functionality to different Privay Frontends.
 - [] Allow User to Configure Settings via UI
 - [] Publist this Plugin
 
+## What's Currently Working
+All the Supported Frontends are Working Currently but settings needs to be HardCoded.
+
 ## How To Use
+Curently you will have to HardCode your settings and use it in Debugging Mode.
 If you want to use it you can HardCode your Settings in `priconf.js` and 
 test this plugin in Firefox by visiting `about:debugging` and Installing this Plugin 
 from there.
-
-## What's Currently Working
-All the Supported Frontends are Working Currently but settings needs to be HardCoded.

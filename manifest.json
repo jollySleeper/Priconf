@@ -18,7 +18,7 @@
     ],
             "browser_specific_settings": {
         "gecko": {
-            "id": "UniConf@jolly.Sleeper",
+            "id": "priConf@jolly.Sleeper",
             "strict_min_version": "42.0"
         }
     }

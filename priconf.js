@@ -2,6 +2,10 @@
 
 // TODO: Always check for Instaces First and localStorage Setting
 // TODO: localStorage Setting "configuredViaExtension" should have instance name
+
+/**
+ * Apply Piped Configuation
+ */
 function piped() {
 	if (localStorage.getItem("configuredViaExtension") !== window.location.host) {
 		// Get Instances by User
@@ -88,17 +92,17 @@ function searxng() {
 
 	if (
 		window.location.pathname === "/search" &&
-        localStorage.getItem("configuredViaExtension") !== window.location.host
+		localStorage.getItem("configuredViaExtension") !== window.location.host
 	) {
-        // Get Instances by User
+		// Get Instances by User
 		const myInstances = [
 			"https://s.frlt.one",
 			"https://search.in.projectsegfau.lt",
 			"https://opnxng.com",
 		];
 
-        for (const instance in myInstances) {
-            if (window.location.origin === myInstances[instance]) {
+		for (const instance in myInstances) {
+			if (window.location.origin === myInstances[instance]) {
 				// TODO: Get This By User
 				const preferenceString =
 					"preferences=eJx1V82S2zYMfpr6oolnkhw6PfjUafsATc8aiIQlRCTB5Y9l7dMXtCSLWm8OqzFAEv_4gFWQsOdAGC89OgxgTgZcn6HHC7ov__17MqzAFOIEObFi6w0mvOisxvLX84ms3G594Pt8-REyniymgfXln79-nCJcMSIENVy-ndKAFi-RiohTwJhNii271uHUJuguf4OJeNJMrRyyuWG4MAh55tCflmdtTLNYY6gf0kmhSxhaEMpZ-b1oB30Dp1C3q95F6lvGMLfk2kRJBCxMcldylESqCmzMZgBF6IwIQNeTk8j80UPftpEVgWksaoLfvv0JXsxp5NvExAHb9koGYzkQpXTDhmLbrjF9cBOptn3EqtzqKHUSPkzCS0Irpb6kW9veSCOXC2JRjAGvolgRikPCm9HXMlUOhrDmaMR3iUhrcyT1oG8ELonySjUGnki3LUs-Qrn0TGUzIRTmfrZ4acGLM_IVTpKQzAelX--V8KshNYaaERCbyNc0QcBGU0Al8ZpXt6-B3EhQR6Zn7kWnNzCX8MY9svWJ5ZsUbRWv3rPWte8DdAHKZ1U1PF6vBDmo3pKTn8Q5fs7bJP6kOPAem1E8hVjZZ0g0hrnha6PY9VLEsfLLcBcTnkNcTZAuAeXBraSbAXZR7NEF9FxJ9yDqeopbxfjcnSW_GzV7Wn--TZLyOkEPRiNdJtLK98labKtsXNhLDKpYLJ2kWGNTPs_cgYXi88aIaOU5qSaqgQ2EunRjKUJfgKIyLPE4c2KJ6ljisHmaXZQcx6EybAZJX_10om6uaQtBmlXMgUPXGbyD0-HInWikjnk8NKgmld7ZHdspa3R7wiO-O7AHrfwTcaw5Dm6lCHdGyN3co92zLvAh8kYp32nCropyyLYrBfpkTHynkZ1kuYmzYzdbrIz56c9-qqwrXlmBs1q5lxozS_Z-wX6tgcg5KBzyVmd9FfgTuiM0gh8bSyFwOAJgY8jle1NsWsVAuNOtrohOEqPA-r2_ym1f4lPb2pHrP9KvRj-4hwp_cF4quUua-v7YZ5KwiJUsgdUgNh7KS-u-0fiYFsTuWDgsMB6aIXerp8UNDQmOlbRh7OfcV49QamuLxpZiTLNlJ6Gt6uCqAxc0f4IkOqpBS-hUMrjkUoYfdDuxG136usPQ70l_gOVu6wq-L3au_EPsV95L9Ff-J_BAVne7TxuQFu2RDgjr-tuxw9_NHEhVDlu6K8NZ7xzn7dZ9INMGt4lQkg8ykEqyIsouUhm0nQnKykSDNevH85hktiUZi9ts9LrD-pIfBN3c85SCbFsdzBWm504AoX4i1mhKL9tGRE-wNfKOy5ylh47OCtCqkaWmr4anrffimLvsUt6AOnsMOT4DIcsWaZnKUvapinaaKJUF66MxDzA-ZnzmnHJXg9eT89xFgIyUb4lkde1GFrnGPGmeg-TCeMuc8COCLzj1gVukQ9kualQsDU5p_ijgxvOHeTSxWYaaH6qus4K7VlaWJgVw0UgOq-Xp6_fvv9-rhCKGD4GYOGhHY2VSSuFMFXJLsd8Odkj9r3vCvox6kwVy46UUwf28UueBY5KZhLIxy8hcJu3hgmS1VQOq8eVEIt9KfY44xyes_0JJmcUL8SLFyMxJ63Ss-QztsshPQc5fjtdSllJQy38gs6zrRlbDT26aq-ztV351LUBB3la2YNFjS82fZKOQvrz8DxvA2ks=";
@@ -115,7 +119,10 @@ function searxng() {
 						if (response.ok === true && response.status === 200) {
 							// For Debug
 							// document.body.style.border = "5px solid green";
-				            localStorage.setItem("configuredViaExtension", window.location.host);
+							localStorage.setItem(
+								"configuredViaExtension",
+								window.location.host,
+							);
 							document.location.reload();
 						}
 					})
@@ -361,7 +368,6 @@ function quetre() {
 		}
 	}
 }
-
 
 // Dependencies -----------------------------------------------------------------------------------
 

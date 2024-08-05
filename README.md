@@ -20,10 +20,10 @@ Over Time I expanded this functionality to different Privay Frontends.
 - Quetre
 
 ## Project RoadMap
-- [] Add UI
-- [] Take Instances Input from User
-- [] Allow User to Configure Settings via UI
-- [] Publist this Plugin
+- [ ] Add UI
+- [ ] Take Instances Input from User
+- [ ] Allow User to Configure Settings via UI
+- [ ] Publist this Plugin
 
 ## What's Currently Working
 All the Supported Frontends are Working Currently but settings needs to be HardCoded.

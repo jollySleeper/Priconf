@@ -1,20 +1,18 @@
-# [Emoji] Priconf
+# 🌐 Priconf
 
-> [Caution_Emoji] Work In Progres
+> ⚠️ Work In Progres
 Currently a HardCoded Firefox Browser Web Extension for having a unified config for your alternate Frontends of favourite services. The extension automatically reloads the page of specified Frontend instances and injects consistent settings and themes, ensuring a uniform experience across all hosted instances.
 
-## [emoji] Motivation
+## 🔥 Motivation
 
-The [LibReddit](https://github.com/#) instances I used from
-[LibRedirect](https://github.com/libredirect/browser_extension) used to have
-different settings for different instances respectively.
-I wanted all the instances that I use to have same settings.
-So, here is the basic WebExtension I created over the Weekend.
-Over Time I expanded this functionality to different Privay Frontends.
+The [LibReddit](https://github.com/libreddit/libreddit) instances I used from [LibRedirect](https://github.com/libredirect/browser_extension) used to have different settings for different instances respectively.
+I wanted all the instances that I use to have same settings. So, here is the basic WebExtension I created over the weekend.
+Over Time I expanded this functionality to different Alternate Frontends.
 
 ## 📖 Table of Contents
 
 - [✨ Features](#features)
+- [🛣️ Roadmap](#roadmap)
 - [🚀 Installation](#installation)
 - [🚀 Configuration](#configuration)
 - [🛠️ Usage](#usage)
@@ -30,39 +28,37 @@ Over Time I expanded this functionality to different Privay Frontends.
 - **Automatic Page Reload**: Automatically reloads the selected instance page when accessed to inject preferences.
 - **Multiple Instances**: Supports various hosted instances of different FroneEnd services, allowing users to switch seamlessly.
 - **Currently Supported Frontends**:
-    - [LibReddit]()
-    - [SearXNG]()
-    - [AnonymousOverflow]()
+    - [LibReddit](https://github.com/libreddit/libreddit)
+    - [SearXNG](https://github.com/searxng/searxng)
+    - [AnonymousOverflow](https://github.com/httpjamesm/AnonymousOverflow)
     - [Piped](https://github.com/TeamPiped/Piped)
-    - [Nitter]()
-    - [LibreMDB]()
-    - [Quetre]()
+    - [Nitter](https://github.com/zedeus/nitter)
+    - [LibreMDB](https://github.com/zyachel/libremdb)
+    - [Quetre](https://github.com/zyachel/quetre)
 
-## [emoji] Roadmap
+## 🛣️ Roadmap
 
 - [ ] Add UI
 - [ ] Take Instances Input from User
 - [ ] Allow User to Configure Settings via UI
 
-## Installation
+## 🚀 Installation
 
 > Curently you will have to HardCode your settings and use it in Debugging Mode.
 
-1. **Clone the repository**:
+- **Clone the repository**:
    ```bash
    git clone https://github.com/jollySleeper/priconf.git
    cd priconf
    ```
-
-2. **Adjust your Settings**:
+- **Adjust your Settings**:
     HardCode your settings for specific instances in `priconf.js`. See [configuration](#configuration) for more details.
-
-3. **Load the extension in Firefox**:
+- **Load the extension in Firefox**:
    - Open Firefox and navigate to `about:debugging#/runtime/this-firefox`.
    - Click on "Load Temporary Add-on".
    - Select the `manifest.json` file from the cloned repository.
 
-## Configuration
+## 🚀 Configuration
 
 The settings for the extension can be found in the `settings.js` file. You can adjust the following parameters:
 
@@ -79,7 +75,7 @@ const settings = {
 };
 ```
 
-## Usage
+## 🛠️ Usage
 
 Once the extension is installed, it will automatically reload the instances that you visit which are configured and apply the specified settings.
 

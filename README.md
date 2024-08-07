@@ -1,6 +1,7 @@
 # 🌐 Priconf
 
 > ⚠️ Work In Progres
+
 Currently a hard coded Firefox Browser Web Extension for having a unified configuration to your alternate Frontends of favourite services. The extension automatically reloads the page of specified Frontend instances and injects consistent settings and themes, ensuring a uniform experience across all hosted instances.
 
 ## 🔥 Motivation
@@ -11,16 +12,16 @@ Over time, I expanded this functionality to different alternate frontends.
 
 ## 📖 Table of Contents
 
-- [✨ Features](#features)
-- [🛣️ Roadmap](#roadmap)
-- [🚀 Installation](#installation)
-- [🔧 Configuration](#configuration)
-- [🛠️ Usage](#usage)
-- [🗑️ Uninstall](#uninstall)
-- [🐛 Bugs or Requests](#bugs-or-requests)
-- [🤝 Contributing](#contributing)
-- [📄 License](#license)
-- [🙏 Acknowledgments](#acknowledgments)
+- [✨ Features](#-features)
+- [🛣️ Roadmap](#-roadmap)
+- [🚀 Installation](#-installation)
+- [🔧 Configuration](#-configuration)
+- [🛠️ Usage](#-usage)
+- [🗑️ Uninstall](#-uninstall)
+- [🐛 Bugs or Requests](#-bugs-or-requests)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
 
 ## ✨ Features
 

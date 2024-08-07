@@ -1,20 +1,20 @@
 # 🌐 Priconf
 
 > ⚠️ Work In Progres
-Currently a HardCoded Firefox Browser Web Extension for having a unified config for your alternate Frontends of favourite services. The extension automatically reloads the page of specified Frontend instances and injects consistent settings and themes, ensuring a uniform experience across all hosted instances.
+Currently a hard coded Firefox Browser Web Extension for having a unified configuration to your alternate Frontends of favourite services. The extension automatically reloads the page of specified Frontend instances and injects consistent settings and themes, ensuring a uniform experience across all hosted instances.
 
 ## 🔥 Motivation
 
-The [LibReddit](https://github.com/libreddit/libreddit) instances I used from [LibRedirect](https://github.com/libredirect/browser_extension) used to have different settings for different instances respectively.
-I wanted all the instances that I use to have same settings. So, here is the basic WebExtension I created over the weekend.
-Over Time I expanded this functionality to different Alternate Frontends.
+The [LibReddit](https://github.com/libreddit/libreddit) instances I used from [LibRedirect](https://github.com/libredirect/browser_extension) used to have different settings for different instances.
+I wanted all the instances that I use to have same settings. So, here is the basic Web Extension I created over the weekend.
+Over time, I expanded this functionality to different alternate frontends.
 
 ## 📖 Table of Contents
 
 - [✨ Features](#features)
 - [🛣️ Roadmap](#roadmap)
 - [🚀 Installation](#installation)
-- [🚀 Configuration](#configuration)
+- [🔧 Configuration](#configuration)
 - [🛠️ Usage](#usage)
 - [🗑️ Uninstall](#uninstall)
 - [🐛 Bugs or Requests](#bugs-or-requests)
@@ -39,12 +39,12 @@ Over Time I expanded this functionality to different Alternate Frontends.
 ## 🛣️ Roadmap
 
 - [ ] Add UI
-- [ ] Take Instances Input from User
-- [ ] Allow User to Configure Settings via UI
+- [ ] Take instances input from User
+- [ ] Allow User to configure settings via UI
 
 ## 🚀 Installation
 
-> Curently you will have to HardCode your settings and use it in Debugging Mode.
+> Curently you will have to hard code your settings and use it in Debugging Mode.
 
 - **Clone the repository**:
    ```bash
@@ -52,28 +52,30 @@ Over Time I expanded this functionality to different Alternate Frontends.
    cd priconf
    ```
 - **Adjust your Settings**:
-    HardCode your settings for specific instances in `priconf.js`. See [configuration](#configuration) for more details.
+    Hard code your settings for specific instances in `priconf.js`. See [configuration](#configuration) for more details.
 - **Load the extension in Firefox**:
    - Open Firefox and navigate to `about:debugging#/runtime/this-firefox`.
    - Click on "Load Temporary Add-on".
    - Select the `manifest.json` file from the cloned repository.
 
-## 🚀 Configuration
+## 🔧 Configuration
 
-The settings for the extension can be found in the `settings.js` file. You can adjust the following parameters:
-
-- **theme**: Set the desired theme for the Piped instances.
-- **defaultQuality**: Specify the default video quality.
-- **autoplay**: Enable or disable autoplay for videos.
+The settings for each alternate frontend can be found in the `priconf.js` file.
+Change `myInstances` variable for each alternate frontend fuction to apply preferences to your select instances.
 
 Example configuration:
 ```javascript
-const settings = {
-    theme: 'dark',
-    defaultQuality: '720p',
-    autoplay: true,
-};
+function libreddit() {
+    const myInstances = [
+        "https://libreddit.kavin.rocks",    // Instance 1
+        "https://libreddit.pussthecat.org", // Instance 2
+    ];
+
+    // Preferred Settings 
+}
 ```
+
+Above code snippet will apply your preferred configuration to the following instances.
 
 ## 🛠️ Usage
 
@@ -82,7 +84,7 @@ Once the extension is installed, it will automatically reload the instances that
 ## 🗑️ Uninstall
 
 If you decide to uninstall, we're sorry to hear that `priconf` didn't meet your expectations. We appreciate your feedback. 
-To uninstall, head to `about:addons` in Firefox Browser and remove the the Priconf addon installed.
+To uninstall, head to `about:addons` in Firefox Browser and remove the the Priconf add-on installed.
 Also, delete the Priconf folder using `rm -r priconf` command.
 
 ## 🐛 Bugs or Requests
